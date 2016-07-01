@@ -1,10 +1,16 @@
 <h1>Word Counter</h1>
-<form action="/results">
-  <div class="">
-    <label for="Enter a word to count"></label>
-    <input type="text" name="word" id="word">
-    <label for="Enter your sentence to match"></label>
-    <input type="text" name="sentence" id="sentence">
-  </div>
-  <button type="submit" class="btn">Count my Words!</button>
-</form>
+<div class="center">
+  <form action="/results">
+    <div class="form">
+      <div id="word">
+        <label id="inputs" for="Word">Enter your word to match</label>
+        <input type="text" name="word" id="word">
+      </div>
+      <div id="sentence">
+        <label id="inputs" for="Sentence">Enter your sentence to match</label>
+        <input type="text" name="sentence" id="sentence">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Count my Words!</button>
+  </form>
+</div>

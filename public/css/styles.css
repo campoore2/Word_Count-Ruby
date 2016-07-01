@@ -1,0 +1,12 @@
+body {
+  background: #EBB660;
+  text-align: center;
+  font-family: monospace;
+  font-size: 25px;
+}
+#word #sentence {
+  float: left;
+}
+#inputs {
+  color: #6095EB;
+}
