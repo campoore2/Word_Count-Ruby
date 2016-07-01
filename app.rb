@@ -4,7 +4,7 @@ require('./lib/wordcount')
 also_reload('lib/**/*.rb')
 
 get('/')do
-  erb(:form)
+  erb(:index)
 end
 get ('/results') do
   @word = params.fetch('word').wordcount(params.fetch('sentence'))
