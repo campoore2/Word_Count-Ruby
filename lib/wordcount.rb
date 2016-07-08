@@ -1,13 +1,9 @@
 class String
-  define_method(:wordcount) do |sentence|
-    sentence = self.to_s
-    final_answer = []
-    sentence.downcase do |word|
-      if sentence.include(word)
-        return final_answer.to_s
-      elsif sentence.!include(word)
-        return "Your word does not appear in the sentence"
-      end
+  define_method(:wordcount) do |phrase|
+    count = 0
+    phrase.downcase().gsub(/[^a-z0-9\s]/i, "").split(" ").each() do |word|
+      count += 1 if word == self.downcase().gsub(/[^a-z0-9\s]/i, "")
     end
+    count
   end
 end
