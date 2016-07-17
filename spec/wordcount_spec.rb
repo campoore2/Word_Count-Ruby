@@ -3,10 +3,7 @@ require('capybara/rspec')
 require("wordcount.rb")
 
 describe("String#wordcount") do
-  it("Will count how many times a given word appears in a given sentence")do
-    expect("move".wordcount("Would you move please?")).to(eq("move"))
+  it("takes a string and counts the number of occurrences in a phrase or sentence") do
+    expect(("Pet").wordfreq("I have a pet dog and a pet cat.")).to(eq(3))
   end
-  # it("Will return false if a sentence has no matching words")do
-  #   expect("move".wordcount("Would you like a treat?")).to((false))
-  # end
 end
