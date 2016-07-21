@@ -7,6 +7,6 @@ get('/')do
   erb(:index)
 end
 get ('/results') do
-  @word = params.fetch('word').wordcount(params.fetch('sentence'))
+  @word = params.fetch('sentence').wordcount(params.fetch('word'))
   erb(:results)
 end

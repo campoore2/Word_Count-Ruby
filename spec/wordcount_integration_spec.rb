@@ -9,6 +9,6 @@ describe('word frequency count', {:type => :feature}) do
     fill_in('word', :with => "pet")
     fill_in('sentence', :with => "i have a pet dog and a pet cat")
     click_button('Count my Words!')
-    expect(page).to have_content("The word 'pet' shows up 2 times.")
+    expect(page).to have_content("Your word appears 2 times")
   end
 end
